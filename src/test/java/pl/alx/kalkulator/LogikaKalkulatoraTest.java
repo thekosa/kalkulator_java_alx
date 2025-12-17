@@ -1,7 +1,6 @@
 package pl.alx.kalkulator;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -31,4 +30,9 @@ class LogikaKalkulatoraTest {
         assertEquals(21, result);
     }
 
+    @Test
+    void testDziel(){
+        var result = logika.oblicz(6, 2, "/");
+        assertEquals(3, result);
+    }
 }
