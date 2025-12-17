@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage("pull") {
             steps {
-                git url: 'https://github.com/thekosa/kalkulator_java_alx.git', branch: 'main'
+                git url: 'https://github.com/thekosa/kalkulator_java_alx.git', branch: 'master'
             }
         }
         stage("build") {
